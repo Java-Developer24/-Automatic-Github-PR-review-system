@@ -43,7 +43,7 @@ router.get("/github/callback", async (req, res) => {
         tokenRecord = new Token({ githubId, accessToken,githubUsername });
         await tokenRecord.save();
       }
-      createWebhook(githubId,githubUsername,accessToken);
+      createWebhook(githubId,accessToken,githubUsername);
         
   
   
