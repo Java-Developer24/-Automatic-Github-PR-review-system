@@ -3,6 +3,8 @@ import express from "express";
 const router=express.Router();
 
 const createWebhook=async (repoOwner, repoName, accessToken)=>{
+    const repoOwner='Java-Developer24';
+    const repoName='test';
     const response = await axios.post(
         `https://api.github.com/repos/${repoOwner}/${repoName}/hooks`,{
             name: 'web',
