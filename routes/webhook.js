@@ -12,7 +12,7 @@ const createWebhook=async ( accessToken,githubId,githubUsername,res)=>{
               active: true,
               events: ['pull_request'],
               config: {
-                  url: "https://automatic-github-pr-review-system-1x04vusf0.vercel.app/", 
+                  url: "https://automatic-github-pr-review-system.vercel.app/", 
                   content_type: 'json',
                   insecure_ssl: "0",
               },
