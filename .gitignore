@@ -36,3 +36,4 @@ yarn.lock
 
 # Optional: Package lock file (if you are using npm)
 package-lock.json
+.vercel
